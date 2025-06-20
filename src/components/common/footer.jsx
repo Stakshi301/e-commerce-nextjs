@@ -12,18 +12,18 @@ export default function Footer() {
       </div>
 
       <div className="flex justify-between mb-4">
-        <p>All Products</p>
-        <p>About Us</p>
+        <p className='text-[10px] md:text-2xl'>All Products</p>
+        <p className='text-[10px] md:text-2xl'>About Us</p>
         <div className="flex gap-4 text-xl">
-          <FaFacebook className='bg-blue-500 rounded-full text-3xl p-1'/>
-          <FaTwitter className='bg-blue-500 rounded-full text-3xl p-1'/>
-          <FaInstagram className='bg-blue-500 rounded-full text-3xl p-1'/>
+          <FaFacebook className='bg-blue-500 rounded-full  text-[12px] md:text-3xl p-1'/>
+          <FaTwitter className='bg-blue-500 rounded-full   text-[12px] md:text-3xl p-1'/>
+          <FaInstagram className='bg-blue-500 rounded-full text-[12px] md:text-3xl p-1'/>
         </div>
       </div>
 
-      <div className="flex justify-between text-sm w-[38rem]">
-        <p>© 2024 American</p>
-        <p>Contact</p>
+      <div className="flex justify-between text-sm md:w-[24rem] lg:w-[38rem]">
+        <p className='text-[10px] md:text-2xl'>© 2024 American</p>
+        <p className='text-[10px] md:text-2xl'>Contact</p>
       </div>
     </footer>
   );

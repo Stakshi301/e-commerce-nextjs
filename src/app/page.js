@@ -6,6 +6,7 @@ import FilteringProducts from "@/components/filtering/filter";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useCart } from "@/context/CartContext";
+import toast from 'react-hot-toast';
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -64,7 +65,7 @@ export default function Home() {
         <main className="lg:w-3/4 w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProducts.map((product) => (
-              <div key={product.id} className="bg-white border shadow-md p-4 rounded-lg text-center">
+              <div key={product.id} className="bg-white  shadow-2xl p-4 rounded-lg text-center transition-transform duration-300 transform hover:scale-110">
                 <Image
                   src={product.images.length > 0 ? product.images[0] : product.thumbnail}
                   alt={product.title}
@@ -78,7 +79,7 @@ export default function Home() {
                 <button
                   onClick={() => {
                     addToCart(product);
-                    alert(`${product.title} added to cart!`);
+                toast.success(`${product.title} added to cart!`);
                   }}
                   className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md"
                 >
