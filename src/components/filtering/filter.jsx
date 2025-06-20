@@ -13,8 +13,8 @@ export default function FilteringProducts({
   setPriceRange,
 }) {
   return (
-    <aside className="bg-blue-100 p-6 rounded-md shadow-md w-full sm:w-64 mb-6 sm:mb-0">
-        <div className='bg-[#0858A8] p-4 rounded-2xl'>
+    <aside className="bg-blue-100 p-6 rounded-md shadow-md w-full sm:w-64 mb-6 sm:mb-0 md:flex md:w-[45rem] md:gap-7">
+        <div className='bg-[#0858A8] p-4 rounded-2xl md:w-[20rem]'>
       <h2 className="text-xl font-semibold mb-4">Filters</h2>
       <div className="mb-6">
         <h4 className="font-medium mb-2">Category</h4>
@@ -80,7 +80,7 @@ export default function FilteringProducts({
 
 
 
-    <div className="bg-white text-black shadow-md rounded-lg p-4 mt-8 w-full">
+    <div className="bg-white text-black shadow-md rounded-lg p-4 mt-8 w-full md:w-[20rem] md:h-[10rem]">
   <h3 className="font-bold text-lg mb-4">Cacyroy</h3>
 
   {/* Category Radios */}
