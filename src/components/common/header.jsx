@@ -2,7 +2,7 @@
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center bg-blue-500 text-black p-4 px-8">
+    <header className="flex justify-between items-center bg-[#0858A8] text-black p-4 px-8">
       <h1 className="text-xl font-bold">Logo</h1>
       <input
         type="text"
